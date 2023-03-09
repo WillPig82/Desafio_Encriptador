@@ -1,5 +1,5 @@
 .contenedor__cerdo{
-	display: none;
+	display: flex;
 	width: 300px;
 	height: 666px;
 	flex-direction: column;
@@ -15,8 +15,8 @@
 
 .imagenCerdoPNG{
 	display: flex;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	margin: 0 0 2rem 0;
 	
 

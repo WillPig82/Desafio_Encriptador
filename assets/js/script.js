@@ -2,12 +2,12 @@ const textArea = document.querySelector(".insert__texto--caja");
 const mensaje = document.querySelector(".cajaTexto");
 
 
-
+ 
 
 
 function validarTexto(){
     let textoEscrito = document.querySelector(".insert__texto--caja").value;
-    let validador = textoEscrito.match(/^[a-z]*$/);
+    let validador = textoEscrito.match(/^[ a-z]*$/);
 
     if(!validador || validador === 0) {
         alert("Solo son permitidas letras minúsculas y sin acentos")
@@ -19,14 +19,33 @@ function validarTexto(){
 
 
 
+$(".btn--1").click(function(){
+                $(".contenedor__cerdo").hide(500);
+            });
+
+$(".btn--2").click(function(){
+                $(".contenedor__cerdo").hide(500);
+            });    
+
+$(".btn--3").click(function(){
+                $(".contenedor__cerdo").show(700);
+            });
+
+/*$(".btn--3").click(function(){
+                $(".imagenCerdoPNG").show(5000);
+            });*/
+
+
+
 function btnEncriptar(){
     if(!validarTexto()) {
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
-        
         textArea.value = "";
+
     }
 }
+    
 
 
 function encriptar(stringEncriptada){
@@ -72,5 +91,5 @@ function copiar(){
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = "";
-    alert("Texto Copiado")
+    /*alert("Texto Copiado")*/
 }
