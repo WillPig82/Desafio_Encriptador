@@ -52,7 +52,7 @@
 }
 
 .btn--3{
-	
+	display: none;
 	height: 60px;
 	width: 180px;
 	font-weight: bold;

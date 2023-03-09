@@ -8,7 +8,7 @@
 .cajaTexto{
 	resize: none;
 	border: none;
-	background-color: #ffffff;
+	background-color: transparent;
 	padding: 1rem;
 	/*font-weight: bold;*/
 	font-size: 1rem;

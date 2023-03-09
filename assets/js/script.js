@@ -31,10 +31,17 @@ $(".btn--3").click(function(){
                 $(".contenedor__cerdo").show(700);
             });
 
-/*$(".btn--3").click(function(){
-                $(".imagenCerdoPNG").show(5000);
-            });*/
+$(".btn--1").click(function(){
+                $(".btn--3").show(500);
+            });
 
+$(".btn--2").click(function(){
+                $(".btn--3").show(500);
+            }); 
+
+$(".btn--3").click(function(){
+                $(".btn--3").hide(700);
+            });
 
 
 function btnEncriptar(){
