@@ -1,0 +1,10 @@
+.encabezado{
+	background: var(--color-fondo-2);
+	padding: 2rem 3rem;
+}
+
+.imagenUno{
+	height: 150px;
+	width: 150px;
+}
+
